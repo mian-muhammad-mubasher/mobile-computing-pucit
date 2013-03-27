@@ -19,11 +19,6 @@ public class MainActivity extends Activity {
     	startActivity(i);
     }
     
-    public void startGridViewActivity(View v){
-    	Intent i = new Intent(this, MyGridActivity.class);
-    	startActivity(i);    	
-    }
-    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

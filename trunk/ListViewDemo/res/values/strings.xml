@@ -6,8 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="default_list_view_message">None to present</string>
     <string name="button1_label">List View Activity</string>
-    <string name="button2_label">Grid View Activity</string>
     <string name="title_activity_my_list">MyListActivity</string>
-    <string name="title_activity_my_grid">MyGridActivity</string>
 
 </resources>

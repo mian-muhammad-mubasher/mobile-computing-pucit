@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="10"
         android:targetSdkVersion="17" />
 
     <application
@@ -26,10 +26,7 @@
             android:name="pk.edu.pucit.mc.listviewdemo.MyListActivity"
             android:label="@string/title_activity_my_list" >
         </activity>
-        <activity
-            android:name="pk.edu.pucit.mc.listviewdemo.MyGridActivity"
-            android:label="@string/title_activity_my_grid" >
-        </activity>
+        
     </application>
 
 </manifest>
