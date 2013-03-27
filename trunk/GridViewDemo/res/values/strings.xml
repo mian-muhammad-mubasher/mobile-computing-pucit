@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridViewDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_1_label">Grid View Activity</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+
+</resources>
