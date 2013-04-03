@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HolderPatternDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_1_label">Holder Pattern Demo</string>
+    <string name="title_activity_holder_pattern">HolderPatternActivity</string>
+    <string name="dummy_image_description">It is an image</string>
+
+</resources>
