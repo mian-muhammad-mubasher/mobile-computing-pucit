@@ -34,6 +34,14 @@
             android:name="pk.edu.pucit.mc.menudemo.ContextMenuActivity"
             android:label="@string/title_activity_context_menu" >
         </activity>
+        <activity
+            android:name="pk.edu.pucit.mc.menudemo.MySharedCodeActivity"
+            android:label="@string/title_activity_my_shared_code" >
+        </activity>
+        <activity
+            android:name="pk.edu.pucit.mc.menudemo.ContextActionBarActivity"
+            android:label="@string/title_activity_context_action_bar" >
+        </activity>
     </application>
 
 </manifest>

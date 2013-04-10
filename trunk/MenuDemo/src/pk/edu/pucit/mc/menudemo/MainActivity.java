@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 		ACTIVITY_MAP = new HashMap<Integer, Class<? extends Activity>>();
 		ACTIVITY_MAP.put(R.id.basic_menu_button, BasicMenuActivity.class);
 		ACTIVITY_MAP.put(R.id.context_menu_button, ContextMenuActivity.class);
+		ACTIVITY_MAP.put(R.id.context_action_bar_button, ContextActionBarActivity.class);
 		ACTIVITY_MAP.put(R.id.dynamic_menu_button, DynamicMenuActivity.class);
 	}
 	

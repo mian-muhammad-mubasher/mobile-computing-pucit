@@ -2,6 +2,7 @@
     
 	<item
         android:id="@+id/menu1"
+        android:icon="@drawable/ic_launcher"
         android:orderInCategory="1"
         android:showAsAction="always"
         android:title="@string/menu1">  

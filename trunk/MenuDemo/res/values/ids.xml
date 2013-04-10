@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="id" name="dynamic_menu1" />  
+    <item type="id" name="dynamic_menu1" />
+    <item type="id" name="dynamic_menu2" />
+    <item type="id" name="dynamic_menu3" />
+    <item type="id" name="dynamic_menu4" />
 </resources>

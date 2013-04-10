@@ -7,10 +7,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ContextMenuActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
+	
+    <ListView
+        android:layout_width="match_parent" 
         android:layout_height="wrap_content"
-        android:text="@string/context_menu_button_title" />
-
+        android:id="@+id/my_list_view"
+        />
+    
 </RelativeLayout>

@@ -24,6 +24,13 @@
 	    android:layout_width="match_parent"/>
 	
 	<Button 
+	    android:id="@+id/context_action_bar_button"
+	    android:onClick="onButtonClick"
+	    android:text="@string/context_action_bar_button_title"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"/>
+	
+	<Button 
 	    android:id="@+id/dynamic_menu_button"
 	    android:onClick="onButtonClick"
 	    android:text="@string/dynamic_menu_button_title"

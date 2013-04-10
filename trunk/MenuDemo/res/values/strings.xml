@@ -20,7 +20,10 @@
     <string name="basic_menu_button_title">Basic Menu Activity</string>
     <string name="dynamic_menu_button_title">Dynamic Menu Activity</string>
     <string name="context_menu_button_title">Context Menu Activity</string>
+    <string name="context_action_bar_button_title">Context Action Bar Menu Activity</string>
     <string name="title_activity_dynamic_menu">DynamicMenuActivity</string>
     <string name="title_activity_context_menu">ContextMenuActivity</string>
+    <string name="title_activity_my_shared_code">MySharedCodeActivity</string>
+    <string name="title_activity_context_action_bar">ContextActionBarActivity</string>
 
 </resources>
