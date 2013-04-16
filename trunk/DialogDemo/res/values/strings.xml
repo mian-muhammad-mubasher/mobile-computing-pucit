@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DialogDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="simple_dialog_button_text">Show Simple Dialog</string>
+    <string name="list_dialog_button_text">Show List Dialog</string>
+    <string name="simple_dialog_title">Like Mobile Computing?</string>
+    <string name="simple_dialog_message">Enjoying Mobile Computing?</string>
+    <string name="simple_dialog_positive_option">Yes, a lot.</string>
+    <string name="simple_dialog_neutral_option">It is so so.</string>
+    <string name="simple_dialog_negative_option">No, I hate it.</string>
+    
+    <string-array name="colors">
+        <item >Red</item>
+        <item >Green</item>
+        <item >Blue</item>
+        <item >Black</item>
+    </string-array>
+
+</resources>
