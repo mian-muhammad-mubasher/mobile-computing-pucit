@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LinkifyDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+    <string name="fire_http_intent_text">Fire Http Intent</string>
+    <string name="fire_my_user_intent_text">Fire My User Intent</string>
+
+</resources>
