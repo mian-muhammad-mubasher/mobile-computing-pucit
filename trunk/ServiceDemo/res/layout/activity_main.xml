@@ -13,10 +13,32 @@
 	    android:text="@string/label_button_1"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:onClick="onCLick"
-	    android:id="@+id/my_button"
+	    android:onClick="onClick"
+	    android:id="@+id/my_downloader_intent_service_button"
 	    />
 	
+	<Button 
+	    android:text="@string/label_button_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:onClick="onClick"
+	    android:id="@+id/my_downloader_service_button"
+	    />
+	
+	<Button 
+	    android:text="@string/label_button_3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:onClick="useBoundService"
+	    />
+	
+	<Button 
+	    android:text="@string/label_button_4"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:onClick="onClickClear"
+	    />
+		
 	<TextView
 	    android:id="@+id/my_text_view" 
 	   	android:layout_width="match_parent"

@@ -15,6 +15,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name="pk.edu.pucit.mc.servicedemo.MainActivity"
             android:label="@string/app_name" >
@@ -24,10 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service
-            android:name="pk.edu.pucit.mc.servicedemo.MyDownloaderService" 
-            >
-        </service>
+        
+        <service android:name="pk.edu.pucit.mc.servicedemo.MyDownloaderIntentService"/>
+        <service android:name="pk.edu.pucit.mc.servicedemo.MyDownloaderService"/>
+        <service android:name="pk.edu.pucit.mc.servicedemo.MyBoundService"/>
+    
     </application>
 
 </manifest>
