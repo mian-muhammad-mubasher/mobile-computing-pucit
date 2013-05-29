@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQLDemo</string>
+    <string name="menu_add">Add Student</string>
+    <string name="empty_list_view_message">Database is empty</string>
+    <string name="title_activity_add_student">AddStudentActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_rollnumber">Student Rollnumber</string>
+    <string name="student_cgpa">CGPA</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
