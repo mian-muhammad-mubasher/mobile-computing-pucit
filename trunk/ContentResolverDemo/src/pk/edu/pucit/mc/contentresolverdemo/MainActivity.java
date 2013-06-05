@@ -25,7 +25,7 @@ public class MainActivity extends ListActivity {
 		String selection = null;
 		String [] selectionArgs = null;
 		String orderBy = null;
-		Uri uri = Uri.parse("content://pk.edu.pucit.mc.contentproviderdemo");
+		Uri uri = Uri.parse("content://pk.edu.pucit.mc.contentproviderdemo/"+SQLDemoContract.tables.StudentEntry.TABLE_NAME);
 		Cursor c = getContentResolver().query(uri, columns, selection, selectionArgs, orderBy);
 		int [] to = {android.R.id.text1};
 		String [] from = { SQLDemoContract.tables.StudentEntry.COLUMN_NAME_ROLL_NUMBER};

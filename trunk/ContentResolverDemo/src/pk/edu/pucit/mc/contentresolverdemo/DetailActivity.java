@@ -19,10 +19,10 @@ public class DetailActivity extends Activity {
 				SQLDemoContract.tables.StudentEntry.COLUMN_NAME_NAME,
 				SQLDemoContract.tables.StudentEntry.COLUMN_NAME_CGPA
 				};
-		String selection = SQLDemoContract.tables.StudentEntry._ID+"=?";
-		String [] selectionArgs = {rollNumber};
+		String selection = null;
+		String [] selectionArgs = null;
 		String orderBy = null;
-		Uri uri = Uri.parse("content://pk.edu.pucit.mc.contentproviderdemo");
+		Uri uri = Uri.parse("content://pk.edu.pucit.mc.contentproviderdemo"+"/"+SQLDemoContract.tables.StudentEntry.TABLE_NAME+"/"+rollNumber);
 		Cursor c = getContentResolver().query(uri, columns, selection, selectionArgs, orderBy);
 		c.moveToFirst();
 		((TextView)findViewById(R.id.student_rollnumber))
