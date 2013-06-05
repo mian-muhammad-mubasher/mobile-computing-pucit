@@ -2,6 +2,7 @@ package pk.edu.pucit.mc.contentproviderdemo;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
+import android.content.UriMatcher;
 import android.database.Cursor;
 import android.net.Uri;
 
@@ -9,12 +10,19 @@ public class MyContentProvider extends ContentProvider {
 
 	
 	private MySQLiteOpenHelper mySQLiteOpenHelper = null;
+	private static UriMatcher uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+	static{
+		uriMatcher.addURI("pk.edu.pucit.mc.contentproviderdemo", 
+				SQLDemoContract.tables.StudentEntry.TABLE_NAME, 0);
+		uriMatcher.addURI("pk.edu.pucit.mc.contentproviderdemo", 
+				SQLDemoContract.tables.StudentEntry.TABLE_NAME+"/*", 1);
+	}
 	
 	@Override
 	public boolean onCreate() {
 		// TODO Auto-generated method stub
 		mySQLiteOpenHelper = new MySQLiteOpenHelper(getContext());
-		return false;
+		return true;
 	}
 	
 	@Override
@@ -43,11 +51,26 @@ public class MyContentProvider extends ContentProvider {
 	public Cursor query(Uri arg0, String[] arg1, String arg2, String[] arg3,
 			String arg4) {
 		// TODO Auto-generated method stub
-		String table = SQLDemoContract.tables.StudentEntry.TABLE_NAME;
+		Uri uri = arg0;
+		String table = null;
 		String [] columns = arg1;
 		String selection = arg2;
 		String [] selectionArgs = arg3;
 		String orderBy = arg4;
+		
+		switch (uriMatcher.match(uri)) {
+		case 0:
+			table = uri.getPathSegments().get(0);
+			break;
+		case 1:
+			table = uri.getPathSegments().get(0);
+			selection = SQLDemoContract.tables.StudentEntry._ID+"=?";
+			selectionArgs = new String [] {uri.getLastPathSegment()};
+			break;
+		default:
+			return null;
+		}
+		
 		
 		Cursor c = mySQLiteOpenHelper.getReadableDatabase().query
 				(table, columns, selection, selectionArgs, null, null, orderBy); 
