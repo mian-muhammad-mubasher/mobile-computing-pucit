@@ -65,7 +65,7 @@ public class PingPongSurfaceView extends SurfaceView implements SurfaceHolder.Ca
 				}
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+//				e.printStackTrace();
 			}
 		}
 	});
@@ -85,12 +85,7 @@ public class PingPongSurfaceView extends SurfaceView implements SurfaceHolder.Ca
 	@Override
 	public void surfaceDestroyed(SurfaceHolder holder) {
 		// TODO Auto-generated method stub
-		try {
-			t.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		t.interrupt();
 	}
 
 }
